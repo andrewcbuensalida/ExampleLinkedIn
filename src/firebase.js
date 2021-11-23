@@ -1,5 +1,4 @@
 import firebase from "firebase";
-// require("dotenv").config();
 
 const firebaseConfig = {
 	apiKey: "AIzaSyC-xAWnGRpV6ndT9GIp7dqIVhj_5toWfQw",
