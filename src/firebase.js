@@ -1,13 +1,14 @@
-import firebase from 'firebase';
+import firebase from "firebase";
+// require("dotenv").config();
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC6NzfAnApF64h-_Vvu2Rh7HA5idMVnJOo",
-    authDomain: "linkedin-project-9d9c9.firebaseapp.com",
-    projectId: "linkedin-project-9d9c9",
-    storageBucket: "linkedin-project-9d9c9.appspot.com",
-    messagingSenderId: "292728490974",
-    appId: "1:292728490974:web:42928dcc7b5ee34acf2b4f",
-    measurementId: "G-1TZZ6GT288"
+	apiKey: "AIzaSyC-xAWnGRpV6ndT9GIp7dqIVhj_5toWfQw",
+	authDomain: "merry-e3b97.firebaseapp.com",
+	projectId: "merry-e3b97",
+	storageBucket: "merry-e3b97.appspot.com",
+	messagingSenderId: "951050260593",
+	appId: "1:951050260593:web:82645fd65a994163128bd0",
+	measurementId: "G-XJY1WQBQDS",
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
