@@ -56,7 +56,7 @@ function Login() {
 
 	return (
 		<div className="login">
-			<img src="https://logodix.com/logo/4345.png" alt="" />
+			<img src="./images/merry.png" alt="" />
 			<form>
 				<input
 					value={name}
