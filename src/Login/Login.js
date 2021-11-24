@@ -18,9 +18,9 @@ function Login() {
 			.then((userAuth) => {
 				userAuth.user
 					.updateProfile({
-						// displayName and photoUrl shouldn't be changed because it's from firebase
+						// displayName and photoURL shouldn't be changed because it's from firebase
 						displayName: name,
-						photoUrl: profilePicture,
+						photoURL: profilePicture,
 					})
 					.then(() => {
 						// dispatch changes local state so that firestore state will be the same
@@ -30,7 +30,7 @@ function Login() {
 								email: userAuth.user.email,
 								uid: userAuth.user.uid,
 								displayName: name,
-								photoUrl: profilePicture,
+								photoURL: profilePicture,
 							})
 						);
 					});
@@ -47,7 +47,7 @@ function Login() {
 						email: userAuth.user.email,
 						uid: userAuth.user.uid,
 						displayName: userAuth.user.displayName,
-						photoUrl: userAuth.user.photoUrl,
+						photoURL: userAuth.user.photoURL,
 					})
 				);
 			})

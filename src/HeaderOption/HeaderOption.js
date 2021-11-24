@@ -6,14 +6,12 @@ import { useSelector } from "react-redux";
 
 function HeaderOption({ Icon, title, avatar, onClick }) {
 	const user = useSelector(selectUser);
-	console.log(`This is user`);
-	console.log(user);
 
 	return (
 		<div onClick={onClick} className="header-option">
 			{Icon && <Icon className="headerOption__icon" />}
 			{avatar && (
-				<Avatar src={user?.photoUrl} className="headerOption__icon">
+				<Avatar src={user?.photoURL} className="headerOption__icon">
 					{user?.email[0]}
 				</Avatar>
 			)}

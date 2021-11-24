@@ -21,7 +21,7 @@ function Sidebar() {
 					src="https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg"
 					alt=""
 				/>
-				<Avatar src={user.photoUrl} className="sidebar__avatar">
+				<Avatar src={user.photoURL} className="sidebar__avatar">
 					{user.email[0]}
 				</Avatar>
 				<h2>{user.displayName}</h2>
