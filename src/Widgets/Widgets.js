@@ -24,8 +24,8 @@ function Widgets() {
 			</div>
 
 			{newsArticle(
-				"Andrew gets a job!",
-				"Mr. Buensalida finally becomes a software engineer."
+				"Andrew gets hired in his dream company",
+				"He is on his way to do great things."
 			)}
 			{newsArticle(
 				"Covid is gone for good",
