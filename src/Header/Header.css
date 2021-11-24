@@ -1,14 +1,19 @@
+.headerContainer {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
 .header {
 	position: sticky;
 	display: flex;
 	top: 0;
-	background-color: white;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	border-bottom: 0.1 px solid gray;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 100%;
+	width: 85%;
 	z-index: 999;
 }
 .header_left {

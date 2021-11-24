@@ -21,22 +21,34 @@ function Header() {
 	};
 
 	return (
-		<div className="header">
-			<div className="header_left">
-				<img src="./images/merry.png" alt="merry" />
-				<div className="header_search">
-					<SearchIcon />
-					<input placeholder="Search" type="text" />
+		<div className="headerContainer">
+			<div className="header">
+				<div className="header_left">
+					<img src="./images/merry.png" alt="merry" />
+					<div className="header_search">
+						<SearchIcon />
+						<input placeholder="Search" type="text" />
+					</div>
 				</div>
-			</div>
 
-			<div className="header_right">
-				<HeaderOption Icon={HomeIcon} title="Home" />
-				<HeaderOption Icon={SuperVisorAccountIcon} title="My Network" />
-				<HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
-				<HeaderOption Icon={ChatIcon} title="Messaging" />
-				<HeaderOption Icon={NotificationsIcon} title="Notifications" />
-				<HeaderOption avatar={true} onClick={logoutApp} title="me" />
+				<div className="header_right">
+					<HeaderOption Icon={HomeIcon} title="Home" />
+					<HeaderOption
+						Icon={SuperVisorAccountIcon}
+						title="My Network"
+					/>
+					<HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+					<HeaderOption Icon={ChatIcon} title="Messaging" />
+					<HeaderOption
+						Icon={NotificationsIcon}
+						title="Notifications"
+					/>
+					<HeaderOption
+						avatar={true}
+						onClick={logoutApp}
+						title="me"
+					/>
+				</div>
 			</div>
 		</div>
 	);
