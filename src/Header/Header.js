@@ -16,6 +16,7 @@ function Header() {
 	const dispatch = useDispatch();
 
 	const logoutApp = () => {
+		// dispatch is to change to local state, auth.signOut is to change the firebase state
 		dispatch(logout());
 		auth.signOut();
 	};

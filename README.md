@@ -7,3 +7,5 @@ todo: need to double check if firestore rules are secure
 to look for icons, go to material-ui.com
 
 demo username and password is demo@demo.com and password is 123456
+
+to create react app with redux, npx create-react-app <name> --template redux
