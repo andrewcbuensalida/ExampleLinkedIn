@@ -10,7 +10,6 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import SuperVisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import { logout } from "../features/userSlice";
 import { auth } from "../firebase";
-import AcUnitIcon from "@material-ui/icons/AcUnit";
 
 function Header() {
 	const dispatch = useDispatch();
@@ -24,7 +23,7 @@ function Header() {
 	return (
 		<div className="header">
 			<div className="header_left">
-				<HeaderOption Icon={AcUnitIcon} title="Merry" />
+				<img src="./images/merry.png" alt="merry" />
 				<div className="header_search">
 					<SearchIcon />
 					<input placeholder="Search" type="text" />

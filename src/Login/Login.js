@@ -18,7 +18,7 @@ function Login() {
 			.then((userAuth) => {
 				userAuth.user
 					.updateProfile({
-						// displayName and photoURL shouldn't be changed because it's from firebase
+						// displayName and photoURL shouldn't be changed because it's from firebase. cant access these from firebase
 						displayName: name,
 						photoURL: profilePicture,
 					})
