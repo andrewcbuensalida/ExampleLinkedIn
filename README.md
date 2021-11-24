@@ -16,3 +16,4 @@ firebase init
 select hosting
 select project on firebase
 public directory? build
+did auto deploy with github
