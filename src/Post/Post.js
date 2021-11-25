@@ -7,6 +7,7 @@ import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 
+// wrapping it in forwardRed allows for the FlipMove animation
 const Post = forwardRef(({ name, description, message, photoURL }, ref) => {
 	return (
 		<div ref={ref} className="post">

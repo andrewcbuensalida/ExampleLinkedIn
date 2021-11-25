@@ -25,7 +25,7 @@ function Login() {
 					.then(() => {
 						// dispatch changes local state so that firestore state will be the same
 						dispatch(
-							// uid from firebase
+							// this stuff is from firebase. it becomes the action.payload in the userSlice
 							login({
 								email: userAuth.user.email,
 								uid: userAuth.user.uid,
@@ -57,6 +57,7 @@ function Login() {
 	return (
 		<div className="login">
 			<img src="./images/merry.png" alt="" />
+			Demo email is demo@demo.com and password is 123456
 			<form>
 				<input
 					value={name}

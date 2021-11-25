@@ -18,3 +18,9 @@ select project on firebase
 public directory? build
 selected auto deploy with github
 then firebase deploy
+
+after 24 hours, ssl should be good.
+
+couldnt get github auto deploy to work
+
+workflow is npm run build, then firebase deploy
