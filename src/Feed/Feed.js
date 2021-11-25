@@ -10,27 +10,33 @@ import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import { db } from "../firebase";
 import firebase from "firebase";
 import { selectUser } from "../features/userSlice";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import FlipMove from "react-flip-move";
+import { selectPosts, setPostsSuccess } from "../features/postsSlice";
 
 function Feed() {
+	const posts = useSelector(selectPosts);
 	const user = useSelector(selectUser);
+	const dispatch = useDispatch();
 	const [input, setInput] = useState("");
 
-	const [posts, setPosts] = useState([]);
-
 	useEffect(() => {
-		// snapshot fires whenever the collection changes
-		db.collection("posts")
-			.orderBy("timestamp", "desc")
-			.onSnapshot((snapshot) =>
-				setPosts(
-					snapshot.docs.map((doc) => ({
-						id: doc.id,
-						data: doc.data(),
-					}))
-				)
-			);
+		try {
+			// snapshot fires whenever the collection changes
+			db.collection("posts")
+				.orderBy("timestamp", "desc")
+				.onSnapshot((snapshot) => {
+					// what's inside setPostsSuccess becomes actions.payload in postsSlice.js
+					dispatch(
+						setPostsSuccess(
+							snapshot.docs.map((doc) => ({
+								id: doc.id,
+								data: doc.data(),
+							}))
+						)
+					);
+				});
+		} catch (err) {}
 	}, []);
 
 	const sendPost = (e) => {
